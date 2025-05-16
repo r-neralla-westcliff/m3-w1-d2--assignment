@@ -8,13 +8,14 @@ block content
             for error in errors
                 li= error.msg
 
-    form(action="." method="POST")
+    form(action="." method="POST" class="form-registration")
         label(for="name") Name:
         input(
             type='text'
             id='name'
             name='name'
             value=data.name
+            class="form-control"
         )
         label(for="email") Email:
         input(
@@ -22,5 +23,6 @@ block content
             id='email'
             name='email'
             value=data.email
+            class="form-control"
         ) 
-        input(type='submit' value='Submit')
+        input(type='submit' value='Submit' class="btn btn-lg btn-primary btn-block")
